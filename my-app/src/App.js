@@ -24,13 +24,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Todo list
         </p>
         <AddList onAddList={addListHandler}></AddList>
-        <MyList displayList={currentList} deleteList={deleteListHandler}></MyList>
+        {currentList.length > 0 && <MyList displayList={currentList} deleteList={deleteListHandler}></MyList>}
       </header>
+      <body>
+
+      </body>
     </div>
   );
 }

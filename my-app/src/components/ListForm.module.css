@@ -1,0 +1,36 @@
+.listRow{
+    display: flex;
+    width: 30%;
+    background: #f8f8f86c;
+    border-radius: 10px;
+    overflow: auto;
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+}
+.listParent
+{
+    display: flex;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(1, 24, 102, 0.397);
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+.listRow-description{
+    float: left;
+}
+
+.listRowButton{
+    width: 33px;
+    margin-left:auto;
+    background: hsla(170, 100%, 53%, 0.39);
+    border: transparent;
+    border-radius: 50%;
+}
+.listRowButton:hover{
+    background: hsla(34, 100%, 50%, 0.89);
+}

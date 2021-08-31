@@ -1,3 +1,5 @@
+import { classExpression } from "@babel/types";
+import classes from "./ListForm.module.css"
 
 const ListForm = (props) => {
 
@@ -8,8 +10,10 @@ const ListForm = (props) => {
 
     return (
         <li key={props.displayList.id}>
-            {props.displayList.value}
-            <button type="button" onClick={deleteListHandler}>X</button>
+            <div className={classes.listParent}>
+                {props.displayList.value}
+                <button className={classes.listRowButton} type="button" onClick={deleteListHandler}></button>
+            </div>
         </li>
     );
 };

@@ -1,4 +1,5 @@
 import ListForm from "./ListForm";
+import classes from "./ListForm.module.css"
 
 const MyList = (props) => {
 
@@ -10,8 +11,8 @@ const MyList = (props) => {
     ));
 
     return (
-        <ul>
-            <h3>{myList}</h3>
+        <ul className={classes.listRow}>
+            <div>{myList}</div>
         </ul>
     );
 };
